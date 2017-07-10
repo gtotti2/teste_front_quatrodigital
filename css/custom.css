@@ -1,0 +1,301 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,900');
+
+/* GENERAL */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+/* MEDIA-QUERIES PERSONALIZADOS */
+
+@media (max-width: 768px) {
+  .col-sm-4.text-right, .col-sm-4.text-left {
+          text-align: center;
+   }
+
+   #navbar-site{
+      text-align: left;
+   } 
+}
+
+/* HEADER */
+
+header li a{
+  color: #f5f5f5;
+}
+
+#navbar-site li span.caret{
+  color: #808080;
+}
+@media (min-width: 768px) {
+  #navbar-site .navbar-nav {
+      float: none;
+      display: inline-block;
+  }
+}
+
+#navbar-site li.dropdown a{
+  padding: 15px 9px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h1.logo{
+ text-indent: -9999px;
+  background: url("../img/logo.png") no-repeat center center; 
+  background-size: contain;
+  height: 51px;
+}
+h1.logo a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.search input{
+  font-size: 12px;
+  color: #f5f5f5;
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #999999;
+}
+.search input:focus{
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.search input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 12px;
+}
+.search input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 12px;
+}
+.search input::-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 12px;
+}
+.search input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.search button{
+  margin: 3px;
+  background: transparent;
+  text-indent: -9999px;
+  border: 0px;
+  width: 18px;
+  height: 19px;
+  background: url("../img/assets/lupa.png");
+}
+
+/* MAIN */
+
+main .row{
+  margin: 0% 0px 2%;
+}
+
+main h3{
+  font-weight: 900;
+  font-size: 40px;
+  padding-bottom: 33px;
+}
+
+main i.novo{
+  background: url("../img/assets/novo.jpg") no-repeat scroll top left;
+  width: 54px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
+main i.frete{
+  background: url("../img/assets/frete_gratis.jpg") no-repeat scroll top left;
+  width: 84px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top:0px;
+  right: 20px;
+}
+
+main i.oferta{
+  background: url("../img/assets/oferta.jpg") no-repeat scroll top left;
+  width: 60px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top:21px;
+  right: 20px;
+}
+
+main .item{
+  padding: 25px;
+}
+main .item p{
+  margin: 0;
+  font-weight: 900;
+}
+main .item p.price{
+  color: #f8595f;
+}
+
+main .item p.price del{
+  color: #999999;
+  font-weight: 600;
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+main .item p.parcela{
+  color: #000000;
+}
+
+main h1{
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+div.search_campo{
+  padding-top:30px;
+}
+
+
+div.search div{
+  float:left;
+  
+}
+
+
+div.search div.input input{
+  width: 100%
+}
+
+div.search div.input{
+  width: 100%;
+}
+div.search div.lupa{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+button.comprar{
+  background: transparent;
+  border: 0;
+  color: #1f7f03;
+  letter-spacing: 0.15em;
+  border: 1px solid #3e6d07;
+  font-weight: 600;
+  margin: 10px;
+  padding: 5px 10px;
+  transition: all .2s ease-out;
+}
+
+button.comprar:hover, button.comprar:hover i.fa{
+  background: #1f7f03;
+  color: #ffffff;
+}
+
+button.comprar i.fa{
+  color: #1f7f03;
+  background: transparent;
+  margin: 5px;
+}
+.novidades{
+  background: #e4e4e4;
+}
+
+
+.news input{
+  margin-top:35px;
+  font-size: 14px;
+  color: #999999;
+  background: url("../img/assets/email.png") no-repeat scroll 10px center transparent;
+  border: 0px;
+  width: 100%;
+  padding-left: 35px;
+  border-bottom: 1px solid #999999;
+}
+.news input:focus{
+  border-bottom: 2px solid #999999;
+}
+
+.news button{
+    background: #333333;
+    border: 0;
+    color: #ffffff;
+    letter-spacing: 0.15em;
+    border: 1px solid #3e6d07;
+    font-weight: 600;
+    margin: 10px;
+    padding: 15px 65px;
+    transition: all .2s ease-out;
+}
+
+.redes-sociais a{
+  background: #ffffff;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0px 6px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  transition: border .5s;
+}
+
+.redes-sociais a:hover{
+  border: 1px solid #999999;
+}
+
+.redes-sociais img{
+  padding: 10px 0px;
+}
+
+.rodape{
+  background: #333333;
+  padding-top: 34px;
+  color: #ffffff;
+}
+
+.rodape h4{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rodape li > *{
+  color: inherit;
+  font-size: 12px;
+}
+
+
+
+.pagamentos{
+  background: #e4e4e4;
+}
+
+.pagamentos .row{
+  padding: 30px 0px;
+}
+
+.endereco .row{
+  padding: 20px 0px;
+}
+
+.endereco p{
+  color: #999999;
+  font-size: 12px;
+}
